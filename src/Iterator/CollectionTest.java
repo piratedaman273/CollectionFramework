@@ -11,11 +11,15 @@ public class CollectionTest {
         list.AddItems(15);
         list.AddItems(17);
         list.AddItems(19);
-
+        //We access the iterator by using object of parent class
         Iterator<Integer> iterator = list.iterator();
 
         while (iterator.hasNext()){
             System.out.println(iterator.next());
+        }
+
+        for (Integer li:list){
+            System.out.println(li);
         }
     }
 }
